@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .md {
+        border: 2px double black;
+        height: 60vh;
+        width: 100vw;
+        background-color: rgb(129, 168, 207);
+        border-radius: 10px;
+        display: flex;
+        position: absolute;
+        top: 60px;
+        left: 30px;
+        gap: 7px;
+        flex-wrap: wrap;
+        align-items: flex-end;
+      }
+      .item {
+        border: 1px solid darkblue;
+        height: 30px;
+        width: 30px;
+        background-color: peachpuff;
+        border-radius: 4px;
+        margin-top: 10px;
+        margin-left: 8px;
+      }
+      .item1 {
+        border: 1px solid darkblue;
+        height: 30px;
+        width: 40px;
+        background-color: peachpuff;
+        border-radius: 4px;
+        margin-top: 10px;
+        margin-left: 8px;
+      }
+      .item2 {
+        border: 1px solid darkblue;
+        height: 30px;
+        width: 40px;
+        background-color: peachpuff;
+        border-radius: 4px;
+        margin-top: 10px;
+        margin-left: 8px;
+      }
+      .item3 {
+        border: 1px solid darkblue;
+        height: 30px;
+        width: 45px;
+        background-color: peachpuff;
+        border-radius: 4px;
+        margin-top: 10px;
+        margin-left: 8px;
+      }
+      .item4 {
+        border: 1px solid darkblue;
+        height: 30px;
+        width: 40px;
+        background-color: peachpuff;
+        border-radius: 4px;
+        margin-top: 10px;
+        margin-left: 30px;
+      }
+      .item5 {
+        border: 1px solid darkblue;
+        height: 30px;
+        width: 40px;
+        background-color: peachpuff;
+        border-radius: 4px;
+        margin-top: 10px;
+        margin-left: 8px;
+      }
+      .item7 {
+        border: 1px solid darkblue;
+        height: 30px;
+        width: 40px;
+        background-color: peachpuff;
+        border-radius: 4px;
+        margin-top: 10px;
+        margin-left: 8px;
+      }
+      .item6 {
+        border: 1px solid darkblue;
+        height: 30px;
+        width: 40px;
+        background-color: peachpuff;
+        border-radius: 4px;
+        margin-top: 10px;
+        margin-left: 8px;
+        margin-right: 10px;
+      }
+      .sd {
+        border: 1px solid darkblue;
+        height: 30px;
+        width: 30px;
+        background-color: peachpuff;
+        border-radius: 4px;
+        margin-left: 15px;
+        margin-top: 10px;
+        gap: 7px;
+      }
+      .sd1 {
+        border: 1px solid darkblue;
+        height: 30px;
+        width: 70px;
+        background-color: peachpuff;
+        border-radius: 4px;
+        margin-left: 8px;
+        margin-top: 10px;
+      }
+      .sd2 {
+        border: 1px solid darkblue;
+        height: 32px;
+        width: 40px;
+        background-color: peachpuff;
+        border-radius: 4px;
+        margin-left: 30px;
+        margin-top: 10px;
+      }
+      .sd3 {
+        border: 1px solid darkblue;
+        height: 30px;
+        width: 40px;
+        background-color: peachpuff;
+        border-radius: 4px;
+        margin-top: 10px;
+        margin-left: 8px;
+      }
+      .sd4 {
+        border: 1px solid darkblue;
+        height: 30px;
+        width: 40px;
+        background-color: peachpuff;
+        border-radius: 4px;
+        margin-top: 10px;
+        margin-left: 8px;
+      }
+      .sd5 {
+        border: 1px solid darkblue;
+        height: 30px;
+        width: 40px;
+        background-color: peachpuff;
+        border-radius: 4px;
+        margin-top: 10px;
+        margin-left: 8px;
+      }
+      .ds {
+        border: 1px solid darkblue;
+        height: 30px;
+        width: 30px;
+        background-color: peachpuff;
+        border-radius: 4px;
+        margin-left: 15px;
+        margin-top: 10px;
+      }
+      .ds1 {
+        border: 1px solid darkblue;
+        height: 30px;
+        width: 63px;
+        background-color: peachpuff;
+        border-radius: 4px;
+        margin-left: 15px;
+        margin-top: -10px;
+      }
+      .ds2 {
+        border: 1px solid darkblue;
+        height: 30px;
+        width: 40px;
+        background-color: peachpuff;
+        border-radius: 4px;
+        margin-left: 30px;
+        margin-top: -10px;
+      }
+      .ds3 {
+        border: 1px solid darkblue;
+        height: 30px;
+        width: 40px;
+        background-color: peachpuff;
+        border-radius: 4px;
+        margin-left: 10px;
+        margin-top: -10px;
+      }
+      .ds4 {
+        border: 1px solid darkblue;
+        height: 30px;
+        width: 40px;
+        background-color: peachpuff;
+        border-radius: 4px;
+        margin-left: 10px;
+        margin-top: -10px;
+      }
+      /* .ds5 {
+        border: 1px solid darkblue;
+        height: 70px;
+        width: 40px;
+        background-color: peachpuff;
+        border-radius: 4px;
+        margin-left: 10px;
+        margin-top: 20px;
+      }*/
+      .gee {
+        border: 1px solid darkblue;
+        height: 30px;
+        width: 30px;
+        background-color: peachpuff;
+        border-radius: 4px;
+        margin-top: 10px;
+        margin-left: 15px;
+      }
+      .gee1 {
+        border: 1px solid darkblue;
+        height: 30px;
+        width: 77px;
+        background-color: peachpuff;
+        border-radius: 4px;
+        margin-top: -40px;
+        margin-left: 15px;
+      }
+      .gee2 {
+        border: 1px solid darkblue;
+        height: 30px;
+        width: 55px;
+        background-color: peachpuff;
+        border-radius: 4px;
+        margin-top: -40px;
+        margin-left: 30px;
+      }
+      .gee3 {
+        border: 1px solid darkblue;
+        height: 30px;
+        width: 40px;
+        background-color: peachpuff;
+        border-radius: 4px;
+        margin-top: -40px;
+        margin-left: 30px;
+      }
+      .gee4 {
+        border: 1px solid darkblue;
+        height: 30px;
+        width: 40px;
+        background-color: peachpuff;
+        border-radius: 4px;
+        margin-top: -40px;
+        margin-left: 11px;
+      }
+      .gee5 {
+        border: 1px solid darkblue;
+        height: 30px;
+        width: 40px;
+        background-color: peachpuff;
+        border-radius: 4px;
+        margin-top: -40px;
+        margin-left: 10px;
+      }
+      /*  .gee6{
+        border: 1px solid darkblue;
+        height: 30px;
+        width: 40px;
+        background-color: peachpuff;
+        border-radius: 4px;
+        margin-top: -40px;
+        margin-left: 10px;*/
+
+      .pr {
+        border: 1px solid darkblue;
+        height: 30px;
+        width: 30px;
+        background-color: peachpuff;
+        border-radius: 4px;
+        margin-top: 5px;
+        margin-left: 15px;
+      }
+      .pr1 {
+        border: 1px solid darkblue;
+        height: 30px;
+        width: 90px;
+        background-color: peachpuff;
+        border-radius: 4px;
+        margin-left: 15px;
+        margin-top: -15px;
+      }
+      .pr2 {
+        border: 1px solid darkblue;
+        height: 30px;
+        width: 100px;
+        background-color: peachpuff;
+        border-radius: 4px;
+        margin-top: -15px;
+        margin-left: 27px;
+      }
+      .pr3 {
+        border: 1px solid darkblue;
+        height: 30px;
+        width: 40px;
+        background-color: peachpuff;
+        border-radius: 4px;
+        margin-top: -15px;
+        margin-left: 30px;
+      }
+      .pr4 {
+        border: 1px solid darkblue;
+        height: 30px;
+        width: 40px;
+        background-color: peachpuff;
+        border-radius: 4px;
+        margin-top: -15px;
+        margin-left: 10px;
+      }
+      .pr5 {
+        border: 1px solid darkblue;
+        height: 30px;
+        width: 40px;
+        background-color: peachpuff;
+        border-radius: 4px;
+        margin-top: -15px;
+        margin-left: 10px;
+      }
+      /* .pr6{
+        border: 1px solid darkblue;
+        height: 80px;
+        width: 40px;
+        background-color: peachpuff;
+        border-radius: 4px;
+        margin-top: -25px;
+        margin-left: 10px;
+      }*/
+      .vg {
+        border: 1px solid darkblue;
+        height: 30px;
+        width: 30px;
+        background-color: peachpuff;
+        border-radius: 4px;
+        margin-left: 15px;
+        margin-bottom: 10px;
+      }
+      .vg1 {
+        border: 1px solid darkblue;
+        height: 30px;
+        width: 50px;
+        background-color: peachpuff;
+        border-radius: 4px;
+        margin-left: 15px;
+        margin-bottom: 10px;
+      }
+      .vg2 {
+        border: 1px solid darkblue;
+        height: 30px;
+        width: 30px;
+        background-color: peachpuff;
+        border-radius: 4px;
+        margin-left: 6px;
+        margin-bottom: 10px;
+      }
+      .vg3 {
+        border: 1px solid darkblue;
+        height: 30px;
+        width: 30px;
+        background-color: peachpuff;
+        border-radius: 4px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+      }
+      .vg4 {
+        border: 1px solid darkblue;
+        height: 30px;
+        width: 250px;
+        background-color: peachpuff;
+        border-radius: 4px;
+        margin-left: 15px;
+        margin-bottom: 10px;
+      }
+      .vg5 {
+        border: 1px solid darkblue;
+        height: 30px;
+        width: 45px;
+        background-color: peachpuff;
+        border-radius: 4px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+      }
+      .vg6 {
+        border: 1px solid darkblue;
+        height: 30px;
+        width: 45px;
+        background-color: peachpuff;
+        border-radius: 4px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+      }
+      .vg7 {
+        border: 1px solid darkblue;
+        height: 30px;
+        width: 45px;
+        background-color: peachpuff;
+        border-radius: 4px;
+        margin-left: 5px;
+        margin-bottom: 10px;
+      }
+      .vg8 {
+        border: 1px solid darkblue;
+        height: 30px;
+        width: 100px;
+        background-color: peachpuff;
+        border-radius: 4px;
+        margin-left: 29px;
+        margin-bottom: 10px;
+      }
+      .vg9 {
+        border: 1px solid darkblue;
+        height: 30px;
+        width: 40px;
+        background-color: peachpuff;
+        border-radius: 4px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="md">
+      <div class="item">Esc</div>
+      <div class="item">F1</div>
+      <div class="item">F2</div>
+      <div class="item">F3</div>
+      <div class="item">F4</div>
+      <div class="item">F5</div>
+      <div class="item">F6</div>
+      <div class="item">F7</div>
+      <div class="item">F8</div>
+      <div class="item">F9</div>
+      <div class="item">F10</div>
+      <div class="item">F11</div>
+      <div class="item">F12</div>
+      <div class="item1">PrtScr</div>
+      <div class="item2">Insert</div>
+      <div class="item3">Delete</div>
+      <div class="item4">PgUp</div>
+      <div class="item7">PgDn</div>
+      <div class="item5">Home</div>
+      <div class="item6">End</div>
+
+      <div class="sd">~</div>
+      <div class="sd">1</div>
+      <div class="sd">2</div>
+      <div class="sd">3</div>
+      <div class="sd">4</div>
+      <div class="sd">5</div>
+      <div class="sd">6</div>
+      <div class="sd">7</div>
+      <div class="sd">8</div>
+      <div class="sd">9</div>
+      <div class="sd">0</div>
+      <div class="sd">-</div>
+      <div class="sd">+</div>
+      <div class="sd1">Backspace</div>
+      <div class="sd2">Num Lock</div>
+      <div class="sd3">/</div>
+      <div class="sd4">*</div>
+      <div class="sd5">-</div>
+
+      <div class="ds1">Tab</div>
+      <div class="ds">Q</div>
+      <div class="ds">W</div>
+      <div class="ds">E</div>
+      <div class="ds">R</div>
+      <div class="ds">T</div>
+      <div class="ds">Y</div>
+      <div class="ds">U</div>
+      <div class="ds">I</div>
+      <div class="ds">O</div>
+      <div class="ds">P</div>
+      <div class="ds">[</div>
+      <div class="ds">]</div>
+      <div class="ds">|</div>
+      <div class="ds2">7</div>
+      <div class="ds3">8</div>
+      <div class="ds4">9</div>
+      <div class="ds5"></div>
+
+      <div class="gee1">CapsLock</div>
+      <div class="gee">A</div>
+      <div class="gee">S</div>
+      <div class="gee">D</div>
+      <div class="gee">F</div>
+      <div class="gee">G</div>
+      <div class="gee">H</div>
+      <div class="gee">J</div>
+      <div class="gee">K</div>
+      <div class="gee">L</div>
+      <div class="gee">;</div>
+      <div class="gee">'</div>
+      <div class="gee2">Enter</div>
+      <div class="gee3">4</div>
+      <div class="gee4">5</div>
+      <div class="gee5">6</div>
+      <div class="gee6"></div>
+
+      <div class="pr1">Shift</div>
+      <div class="pr">Z</div>
+      <div class="pr">X</div>
+      <div class="pr">C</div>
+      <div class="pr">V</div>
+      <div class="pr">B</div>
+      <div class="pr">N</div>
+      <div class="pr">M</div>
+      <div class="pr">,</div>
+      <div class="pr">.</div>
+      <div class="pr">/</div>
+      <div class="pr2">Shift</div>
+      <div class="pr3">1</div>
+      <div class="pr4">2</div>
+      <div class="pr5">3</div>
+      <div class="pr6"></div>
+
+      <div class="vg1">Ctrl</div>
+      <div class="vg2">Fn</div>
+      <div class="vg3"></div>
+      <div class="vg">Alt</div>
+      <div class="vg4"></div>
+      <div class="vg">Alt</div>
+      <div class="vg">Ctrl</div>
+      <div class="vg5"></div>
+      <div class="vg6"></div>
+      <div class="vg7"></div>
+      <div class="vg8">0</div>
+      <div class="vg9">.</div>
+    </div>
+  </body>
+</html>
